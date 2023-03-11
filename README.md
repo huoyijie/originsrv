@@ -84,5 +84,12 @@ Running migrations:
 python manage.py createsuperuser --username=huoyijie --email=huoyijie@huoyijie.cn
 ```
 
+编辑 originsrv/settings.py
+```conf
+LANGUAGE_CODE = 'zh-hans'
+
+TIME_ZONE = 'Asia/Shanghai'
+```
+
 ## 引用
 > [Django Docs](https://docs.djangoproject.com/zh-hans/4.1/)
