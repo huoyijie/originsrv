@@ -10,4 +10,4 @@ admin.site.site_header = _('Origin server administration')
 
 @admin.register(Resource)
 class ResourceAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['file']
