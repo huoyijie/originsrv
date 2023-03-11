@@ -19,11 +19,11 @@ msgstr ""
 
 #: admin.py:7
 msgid "Origin server admin"
-msgstr "回源服务管理员"
+msgstr "cdn.huoyijie.cn"
 
 #: admin.py:8 apps.py:8
 msgid "Origin server administration"
-msgstr "回源服务"
+msgstr "cdn.huoyijie.cn"
 
 #: models.py:7
 msgid "Dir"
