@@ -7,6 +7,8 @@ class Resource(models.Model):
         'Dir'), max_length=200)
     name = models.CharField(verbose_name=_(
         'Name'), max_length=200, unique=True)
+    file = models.FileField(verbose_name=_(
+        'File'), upload_to='uploads/%Y/%m/')
 
     class Meta:
         verbose_name = _('Resource')
