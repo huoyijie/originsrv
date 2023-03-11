@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-11 19:43+0800\n"
+"POT-Creation-Date: 2023-03-11 21:36+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: admin.py:8
+#: admin.py:7 views.py:7
 msgid "Origin server admin"
 msgstr "回源服务管理员"
 
-#: admin.py:11 apps.py:8
+#: admin.py:8 apps.py:8
 msgid "Origin server administration"
 msgstr "回源服务"
 
