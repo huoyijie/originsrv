@@ -48,11 +48,6 @@ Quit the server with CONTROL-C.
 
 访问上方的 URL，应该会打开 Django 管理后台
 
-创建 webapp
-```bash
-$ python manage.py startapp webapp
-```
-
 初始化 Django 内置数据库表
 ```bash
 $ python manage.py migrate
@@ -89,6 +84,33 @@ python manage.py createsuperuser --username=huoyijie --email=huoyijie@huoyijie.c
 LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
+```
+
+创建 webapp
+```bash
+$ python manage.py startapp webapp
+```
+
+增加模型 webapp/models.py
+```python
+class Resource(models.Model):
+    dir = models.CharField('目录', max_length=200)
+    name = models.CharField('名称', max_length=200, unique=True)
+    name = models.CharField('哈希', max_length=200, unique=True)
+```
+
+配置 originsrv/settings.py
+```python
+INSTALLED_APPS = [
+    'webapp.apps.WebappConfig',
+    # ...
+]
+```
+
+模型迁移
+```bash
+python manage.py makemigrations webapp
+python manage.py migrate
 ```
 
 ## 引用
