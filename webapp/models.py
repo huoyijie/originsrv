@@ -6,7 +6,7 @@ class Resource(models.Model):
     file = models.FileField(verbose_name=_('File'), upload_to='uploads/%Y/%m/')
 
     def __str__(self):
-        return gettext('File')
+        return self.file.name
 
     class Meta:
         verbose_name = _('Resource')

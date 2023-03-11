@@ -11,3 +11,4 @@ admin.site.site_header = _('Origin server administration')
 @admin.register(Resource)
 class ResourceAdmin(admin.ModelAdmin):
     list_display = ['file']
+    list_per_page = 10
