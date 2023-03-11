@@ -85,7 +85,7 @@ python manage.py createsuperuser --username=huoyijie --email=huoyijie@huoyijie.c
 ```
 
 编辑 originsrv/settings.py
-```conf
+```python
 LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
