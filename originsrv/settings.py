@@ -130,5 +130,3 @@ MEDIA_ROOT = BASE_DIR / 'public/media'
 if not DEBUG:
     STATIC_URL = os.environ['STATIC_URL']
     MEDIA_URL = os.environ['MEDIA_URL']
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
