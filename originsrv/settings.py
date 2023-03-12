@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEBUG' in  os.environ
+DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -126,3 +126,7 @@ STATIC_ROOT = BASE_DIR / 'public/static'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = BASE_DIR / 'public/media'
+
+if not DEBUG:
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
