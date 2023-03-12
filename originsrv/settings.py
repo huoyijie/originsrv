@@ -129,7 +129,7 @@ MEDIA_ROOT = BASE_DIR / 'public/media'
 
 APP_URL = ''
 if not DEBUG:
-    APP_URL = 'origin'
+    APP_URL = 'origin/'
     if 'STATIC_URL' in os.environ:
         STATIC_URL = os.environ['STATIC_URL']
     if 'MEDIA_URL' in os.environ:
