@@ -13,7 +13,11 @@
         "runserver"
       ],
       "django": true,
-      "justMyCode": false
+      "justMyCode": false,
+      "env": {
+        "SECRET_KEY": "5@%sv9j@+(i*owb0#_0xhu+%^9huj*6)8gz&4hc&e6y_*l#6v@",
+        "DEBUG": ""
+      }
     }
   ]
 }
