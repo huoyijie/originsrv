@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from originsrv import settings
 
 urlpatterns = [
-    path('', admin.site.urls),
+    path(settings.APP_URL, admin.site.urls),
 ]

@@ -113,5 +113,12 @@ python manage.py makemigrations webapp
 python manage.py migrate
 ```
 
+部署
+迁移数据库
+新建super user
+collectstatic
+
+sudo apt install gettext
+django-admin compilemessages
 ## 引用
 > [Django Docs](https://docs.djangoproject.com/zh-hans/4.1/)
