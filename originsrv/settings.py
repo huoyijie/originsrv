@@ -128,5 +128,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = BASE_DIR / 'public/media'
 
 if not DEBUG:
-    STATIC_URL = os.environ['STATIC_URL']
-    MEDIA_URL = os.environ['MEDIA_URL']
+    if 'STATIC_URL' in os.environ:
+        STATIC_URL = os.environ['STATIC_URL']
+    if 'MEDIA_URL' in os.environ:
+        MEDIA_URL = os.environ['MEDIA_URL']
