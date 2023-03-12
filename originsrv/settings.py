@@ -130,6 +130,8 @@ MEDIA_ROOT = BASE_DIR / 'public/media'
 APP_URL = ''
 if not DEBUG:
     APP_URL = 'origin/'
+    if 'CSRF_TRUSTED_ORIGINS' in os.environ:
+        CSRF_TRUSTED_ORIGINS = [os.environ['CSRF_TRUSTED_ORIGINS']]
     if 'STATIC_URL' in os.environ:
         STATIC_URL = os.environ['STATIC_URL']
     if 'MEDIA_URL' in os.environ:
